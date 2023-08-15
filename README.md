@@ -85,7 +85,7 @@ It simply lists the things that you need to do and allows you to mark them as co
 Install this project with:
 
 - Open your command prompt or terminal and run.
--  git clone https://github.com/MariamOsman11/todo-list.git
+-  git clone https://github.com/siddghosh108/Todo-List.git
 
 ### Usage
 
