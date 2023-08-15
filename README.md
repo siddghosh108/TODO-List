@@ -14,7 +14,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-      - [🚀 Live Demo ](#-live-demo-)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -66,16 +65,6 @@ It simply lists the things that you need to do and allows you to mark them as co
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
- ## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://mariamosman11.github.io/todo-list/dist/)
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -118,9 +107,9 @@ To run tests, run the following command:
 
 👤 **Author1**
 
-- GitHub: https://github.com/MariamOsman11
-- Twitter: https://twitter.com/@Mariannaloveee
-- [LinkedIn](https://www.linkedin.com/in/marianna-osman-a57b75226)
+- GitHub: [@siddghosh108](https://github.com/siddghosh108)
+- Twitter: [@siddharthaghos9](https://twitter.com/siddharthaghos9)
+- LinkedIn: [@siddhartha-ghosh-65902718](https://www.linkedin.com/in/siddhartha-ghosh-65902718)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
