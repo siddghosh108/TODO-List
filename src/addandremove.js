@@ -1,4 +1,4 @@
-const TaskContainer = document.querySelector('.list-Container');
+const taskContainer = document.querySelector('.list-Container');
 
 class CreatetodoList {
   constructor(description, completed, id) {
@@ -24,23 +24,23 @@ class CreatetodoList {
           </div>
           `;
 
-    TaskContainer.appendChild(listItem);
+    taskContainer.appendChild(listItem);
   };
 
   static loadFromLocalStorage() {
-    let Tasks;
+    let tasks;
 
     if (localStorage.getItem('TasksInfo')) {
-      Tasks = JSON.parse(localStorage.getItem('TasksInfo'));
+      tasks = JSON.parse(localStorage.getItem('TasksInfo'));
     } else {
-      Tasks = [];
+      tasks = [];
     }
-    return Tasks;
+    return tasks;
   }
 
   static displayTasksOnPage() {
-    const Tasks = CreatetodoList.loadFromLocalStorage();
-    Tasks.forEach((task) => {
+    const tasks = CreatetodoList.loadFromLocalStorage();
+    tasks.forEach((task) => {
       if (task.completed === true) {
         CreatetodoList.displayTasks(task, 'checked', 'tickedItem');
       } else {
@@ -61,23 +61,23 @@ class CreatetodoList {
 
   static removeFromLocalStorage(element) {
     let k = 0;
-    const Tasks = CreatetodoList.loadFromLocalStorage();
+    const tasks = CreatetodoList.loadFromLocalStorage();
 
     const idd = element.parentElement.id;
     const newID = Number(idd);
-    for (let i = 0; i < Tasks.length; i += 1) {
-      if (Tasks[i].id === newID) {
+    for (let i = 0; i < tasks.length; i += 1) {
+      if (tasks[i].id === newID) {
         k = i;
         break;
       }
     }
-    Tasks.splice(k, 1);
+    tasks.splice(k, 1);
     let X = 1;
-    Tasks.forEach((task) => {
+    tasks.forEach((task) => {
       task.id = X;
       X += 1;
     });
-    localStorage.setItem('TasksInfo', JSON.stringify(Tasks));
+    localStorage.setItem('tasksInfo', JSON.stringify(tasks));
   }
 }
 

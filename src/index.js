@@ -52,9 +52,9 @@ listContainer.addEventListener('click', (e) => {
           targetElement.innerHTML = two.value;
           insertInput.remove();
           checkMark.remove();
-          const Info = storageInfo();
-          Info[targetElement.id - 1].description = two.value;
-          localStorage.setItem('TasksInfo', JSON.stringify(Info));
+          const info = storageInfo();
+          info[targetElement.id - 1].description = two.value;
+          localStorage.setItem('TasksInfo', JSON.stringify(info));
         }
       };
     }
